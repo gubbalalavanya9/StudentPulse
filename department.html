@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ dept }} Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">{{ dept }} Department</div>
+
+<div class="menu">
+    <a href="/">Dashboard</a>
+    <a href="/students">All Students</a>
+</div>
+
+<div class="container">
+<table>
+<tr>
+    <th>ID</th><th>Name</th><th>Roll</th><th>Year</th>
+</tr>
+{% for s in students %}
+<tr>
+    <td>{{ s.id }}</td>
+    <td>{{ s.name }}</td>
+    <td>{{ s.roll_no }}</td>
+    <td>{{ s.year }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+</body>
+</html>
