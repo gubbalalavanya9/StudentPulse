@@ -1,77 +1,59 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
+  font-family: Arial;
+  background: #f4f6fb;
+  padding: 20px;
 }
 
-.navbar {
-    background-color: #4b6cb7;
-    padding: 15px;
-    color: white;
-    text-align: center;
-    font-size: 22px;
+h1, h2 {
+  text-align: center;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    background-color: #182848;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .menu a {
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
+  padding: 15px;
+  background: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-.menu a:hover {
-    background-color: #4b6cb7;
+form {
+  max-width: 300px;
+  margin: auto;
 }
 
-.container {
-    width: 80%;
-    margin: 30px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-h2 {
-    color: #333;
-}
-
-input, button, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  margin: auto;
+  border-collapse: collapse;
 }
 
-th {
-    background-color: #4b6cb7;
-    color: white;
-    padding: 10px;
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
-td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+#deptList div {
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 6px;
 }
-
-.card {
-    display: inline-block;
-    width: 200px;
-    margin:
