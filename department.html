@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ dept }} Students</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Departments</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="groupByDepartment()">
 
-<div class="navbar">{{ dept }} Department</div>
+<h2>Students by Department</h2>
 
-<div class="menu">
-    <a href="/">Dashboard</a>
-    <a href="/students">All Students</a>
-</div>
+<div id="deptList"></div>
 
-<div class="container">
-<table>
-<tr>
-    <th>ID</th><th>Name</th><th>Roll</th><th>Year</th>
-</tr>
-{% for s in students %}
-<tr>
-    <td>{{ s.id }}</td>
-    <td>{{ s.name }}</td>
-    <td>{{ s.roll_no }}</td>
-    <td>{{ s.year }}</td>
-</tr>
-{% endfor %}
-</table>
-</div>
+<a href="index.html">⬅ Back</a>
 
+<script src="script.js"></script>
 </body>
 </html>
